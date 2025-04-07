@@ -1,5 +1,5 @@
 class_name Stator
 extends Node
 
-var states {}
-var state: States = States
+var states = {}
+@export var current_state: State
