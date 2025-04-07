@@ -57,7 +57,7 @@ Acts as the entry point, bootstraps stuff, and manages game-level state.
 Clone the project and open it in Godot 4.x:
 
 ```bash
-git clone https://github.com/Shurmn/gobo.git.git
+git clone https://github.com/Shurmn/gobo.git
 ```
 
 Then run the `main.tscn` scene to see the current setup in action.
