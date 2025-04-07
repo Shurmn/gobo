@@ -1,6 +1,4 @@
----
 
-```markdown
 # GoBo 🧱 A Godot 4 base for building structured, scalable games faster 
 
 _Hopefully: a modular foundation for building future Godot games._
@@ -16,8 +14,6 @@ Goals include:
 - 🏗 Well-organized **project structure**
 - 🎮 A unified **main scene** setup for rapid prototyping
 
----
-
 ## 📂 Project Structure
 
 ```
@@ -28,8 +24,6 @@ res://
 │   └── singletons/ # Autoloads, global systems
 └── main.tscn       # The entry point of the game
 ```
-
----
 
 ## ⚙️ Systems (WIP)
 
@@ -49,8 +43,6 @@ EventBus.emit("player_died", player_id)
 
 Acts as the entry point, bootstraps stuff, and manages game-level state.
 
----
-
 ## 📈 Roadmap
 
 - [x] Set up project structure
@@ -59,8 +51,6 @@ Acts as the entry point, bootstraps stuff, and manages game-level state.
 - [ ] Add example game logic
 - [ ] Build demo scene (title screen + basic gameplay)
 - [ ] Write documentation & dev guide
-
----
 
 ## 🧪 Try It Out
 
@@ -72,16 +62,10 @@ git clone https://github.com/Shurmn/gobo.git.git
 
 Then run the `main.tscn` scene to see the current setup in action.
 
----
-
 ## 🪪 License
 
 MIT — free to use, modify, and build cool things with.
 
----
 
 > _"Did this goof really just put a footer on a readme file? Why?"_  
 > — You, probably
-```
-
----
