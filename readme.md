@@ -18,7 +18,8 @@ Goals include:
 
 ```
 res://
-├── scenes/         
+├── scenes/
+│   ├── menu/       # Main menu
 ├── scripts/
 │   ├── core/       # Core logic modules
 │   └── singletons/ # Autoloads, global systems
