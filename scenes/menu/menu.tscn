@@ -21,16 +21,16 @@ size_flags_vertical = 0
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/VBoxContainer"]
+[node name="Topline" type="HBoxContainer" parent="HBoxContainer/VBoxContainer"]
 layout_mode = 2
 alignment = 2
 
-[node name="Logo" type="TextureRect" parent="HBoxContainer/VBoxContainer/HBoxContainer"]
+[node name="Logo" type="TextureRect" parent="HBoxContainer/VBoxContainer/Topline"]
 layout_mode = 2
 texture = ExtResource("1_uv2sw")
 stretch_mode = 2
 
-[node name="Title" type="RichTextLabel" parent="HBoxContainer/VBoxContainer/HBoxContainer"]
+[node name="Title" type="RichTextLabel" parent="HBoxContainer/VBoxContainer/Topline"]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/bold_font_size = 64
@@ -39,21 +39,21 @@ text = "[b]GoBo[/b]
 A Godot gadget for getting games going"
 fit_content = true
 
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/VBoxContainer"]
+[node name="Buttons" type="VBoxContainer" parent="HBoxContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 0
 
-[node name="New Game" type="Button" parent="HBoxContainer/VBoxContainer/VBoxContainer"]
+[node name="New Game" type="Button" parent="HBoxContainer/VBoxContainer/Buttons"]
 layout_mode = 2
 text = "New Game"
 alignment = 0
 
-[node name="Settings" type="Button" parent="HBoxContainer/VBoxContainer/VBoxContainer"]
+[node name="Settings" type="Button" parent="HBoxContainer/VBoxContainer/Buttons"]
 layout_mode = 2
 text = "Settings"
 alignment = 0
 
-[node name="Exit" type="Button" parent="HBoxContainer/VBoxContainer/VBoxContainer"]
+[node name="Exit" type="Button" parent="HBoxContainer/VBoxContainer/Buttons"]
 layout_mode = 2
 text = "Exit"
 alignment = 0
