@@ -1,4 +1,4 @@
-# GoBo 🧱 A Godot 4 base for building structured, scalable games faster 
+# GoBo 🧱 Godot Boilerplate 
 
 _Hopefully: a modular foundation for building future Godot games._
 
