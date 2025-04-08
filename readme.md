@@ -1,20 +1,19 @@
-
 # GoBo 🧱 A Godot 4 base for building structured, scalable games faster 
 
 _Hopefully: a modular foundation for building future Godot games._
 
-## ✨ Overview
+## Overview
 
 This is a **work-in-progress Godot project** designed to act as a reusable base for my future games. The focus is on solving common game architecture patterns once and reusing them cleanly.
 
 Goals include:
 
-- 🔁 Modular and extensible **state machine system**
-- 📨 Decoupled **event bus** for flexible communication
-- 🏗 Well-organized **project structure**
-- 🎮 A unified **main scene** setup for rapid prototyping
+- Modular and extensible **state machine system**
+- Decoupled **event bus** for flexible communication
+- Well-organized **project structure**
+- A unified **main scene** setup for rapid prototyping
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 res://
@@ -41,13 +40,13 @@ All art assets, including images, sounds, and animations, are neatly organized u
 
 This structure ensures that each part of the project is modular, easily extendable, and maintainable.
 
-## ⚙️ Systems (WIP)
+## Systems (WIP)
 
-### 🧠 State Machine
+### State Machine
 
 A reusable state machine node system.
 
-### 🛰 Event Bus
+### Event Bus
 
 A global signal-based event system for decoupling node dependencies.
 
@@ -55,11 +54,11 @@ A global signal-based event system for decoupling node dependencies.
 EventBus.emit("player_died", player_id)
 ```
 
-### 🌐 Main Scene
+### Main Scene
 
 Acts as the entry point, bootstraps stuff, and manages game-level state.
 
-## 📈 Roadmap
+## Roadmap
 
 - [x] Set up project structure
 - [x] Implement basic state machine
@@ -68,7 +67,7 @@ Acts as the entry point, bootstraps stuff, and manages game-level state.
 - [ ] Build demo scene (title screen + basic gameplay)
 - [ ] Write documentation & dev guide
 
-## 🧪 Try It Out
+## Try It Out
 
 Clone the project and open it in Godot 4.x:
 
@@ -78,10 +77,11 @@ git clone https://github.com/Shurmn/gobo.git
 
 Then run the `main.tscn` scene to see the current setup in action.
 
-## 🪪 License
+## License
 
 MIT — free to use, modify, and build cool things with.
 
+---
 
 > _"Did this goof really just put a footer on a readme file? Why?"_  
 > — You, probably
