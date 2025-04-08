@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://dbvtfnjlbam4j"]
+
+[ext_resource type="Script" path="res://scenes/main/Main.gd" id="1_bdg3b"]
+[ext_resource type="PackedScene" uid="uid://dwsmcym7vx63b" path="res://scenes/menu/menu.tscn" id="2_t8j7t"]
+[ext_resource type="Script" path="res://scripts/core/Stator.gd" id="3_xw7ni"]
+[ext_resource type="Script" path="res://scripts/core/State.gd" id="4_bam0k"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_bdg3b")
+
+[node name="Menu" parent="." instance=ExtResource("2_t8j7t")]
+
+[node name="Stator" type="Node" parent="."]
+script = ExtResource("3_xw7ni")
+
+[node name="State" type="Node" parent="Stator"]
+script = ExtResource("4_bam0k")
