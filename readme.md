@@ -26,6 +26,21 @@ res://
 └── main.tscn       # The entry point of the game
 ```
 
+This project is organized into three main folders, each serving a distinct purpose to keep everything modular and self-contained:
+
+### **Scenes Folder**
+All the scene files are located in the `scenes/` directory. Each scene is self-contained with its associated files (such as scripts, shaders, etc.). There are **no external script dependencies**, except for the core functionality provided in the `scripts/` folder. This ensures that each scene can be easily worked on and reused without additional external links.
+
+### **Scripts Folder**
+The `scripts/` folder contains the core functionality and singleton systems:
+- **`core/`**: This subdirectory houses the base classes, stators, states, and data structures that other game systems will extend.
+- **`singletons/`**: This is where autoloads (singletons) are stored for global access throughout the game, handling persistent global behavior and services.
+
+### **Assets Folder**
+All art assets, including images, sounds, and animations, are neatly organized under the `assets/` directory. This keeps resources structured and easy to manage.
+
+This structure ensures that each part of the project is modular, easily extendable, and maintainable.
+
 ## ⚙️ Systems (WIP)
 
 ### 🧠 State Machine
