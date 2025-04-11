@@ -12,7 +12,7 @@ func handle_input(event: InputEvent) -> void:
 func update(_delta: float) -> void:
 	pass
 
-# same idea, let the stator control when this happens	
+# same idea, let the stator control when this happens
 func physics_update(_delta: float) -> void:
 	pass
 

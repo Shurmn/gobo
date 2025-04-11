@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://scenes/main/Main.gd" id="1_bdg3b"]
 [ext_resource type="PackedScene" uid="uid://dwsmcym7vx63b" path="res://scenes/menu/menu.tscn" id="2_t8j7t"]
-[ext_resource type="Script" path="res://scripts/core/Stator.gd" id="3_xw7ni"]
-[ext_resource type="Script" path="res://scripts/core/State.gd" id="4_bam0k"]
+[ext_resource type="Script" path="res://scripts/core/stator.gd" id="3_xw7ni"]
+[ext_resource type="Script" path="res://scripts/core/state.gd" id="4_bam0k"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_bdg3b")
