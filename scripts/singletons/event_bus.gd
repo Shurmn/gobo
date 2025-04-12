@@ -1,8 +1,6 @@
 class_name EventBus
 extends Node
 
-# https://github.com/BajaTheFrog/godot-event-bus/blob/main/addons/event_bus/event_bus_service.gd
-
 # we will need a dictionary of events-to-subs, to track who wants which call-backs
 # each key will be an event id, and the value will be a list of subscribers to that event
 # nodes will subscribe by putting their refs on the lists of events they care about:
