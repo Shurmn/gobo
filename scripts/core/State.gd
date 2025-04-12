@@ -2,7 +2,7 @@ class_name State
 extends Node
 
 # the state wants to change
-signal state_aspires_to(desired_state: String)
+signal state_wants_to_change(desired_state: String)
 
 # the stator will give us unhandled inputs from this chute
 func handle_input(event: InputEvent) -> void:
@@ -20,6 +20,6 @@ func physics_update(_delta: float) -> void:
 func on_enter() -> void:
 	pass
 
-# dont let the door hit ya
+# dont let the door hit ya in the timer
 func on_exit() -> void:
 	pass
