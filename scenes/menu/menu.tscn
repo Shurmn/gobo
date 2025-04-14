@@ -57,3 +57,6 @@ alignment = 0
 layout_mode = 2
 text = "Exit"
 alignment = 0
+
+[node name="Panel" type="Panel" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2

@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://scenes/main/main.gd" id="1_bdg3b"]
 [ext_resource type="PackedScene" uid="uid://dwsmcym7vx63b" path="res://scenes/menu/menu.tscn" id="2_t8j7t"]
-[ext_resource type="Script" path="res://scenes/main/state_machine.gd" id="3_cnecu"]
-[ext_resource type="Script" path="res://scenes/main/state.gd" id="4_87l1w"]
+[ext_resource type="Script" path="res://scenes/main/main_state_machine.gd" id="3_cnecu"]
+[ext_resource type="Script" path="res://scenes/main/main_state.gd" id="4_87l1w"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_bdg3b")
@@ -13,5 +13,5 @@ script = ExtResource("1_bdg3b")
 [node name="MainStateMachine" type="Node" parent="."]
 script = ExtResource("3_cnecu")
 
-[node name="State" type="Node" parent="MainStateMachine"]
+[node name="MainState" type="Node" parent="MainStateMachine"]
 script = ExtResource("4_87l1w")

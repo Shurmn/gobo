@@ -5,8 +5,8 @@ extends Node
 # each key will be an event id, and the value will be a list of subscribers to that event
 # nodes will subscribe by putting their refs on the lists of events they care about:
 # 	Ex: EventBus.subscribe(game_paused, self, pause)
-# nodes can trigger events, and we'll call the functions of every subscriber:
-#	Ex: EventBus.trigger(game_paused)
+# nodes can post events, and we'll call the functions of every subscriber:
+#	Ex: EventBus.post(game_paused)
 
 @onready var registry: Dictionary = {}
 
@@ -16,7 +16,7 @@ func subscribe(event_id, subscriber: Object, function_name: String) -> void:
 	_register(new_subscription)
 
 # call the function of every subscriber in registry[event.event_id]
-func trigger(event: Event) -> void:
+func post(event: Event) -> void:
 	var id = event.event_id
 	if id in registry:
 		var event_subs: Array = registry[id]

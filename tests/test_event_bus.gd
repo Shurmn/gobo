@@ -34,30 +34,30 @@ func test_subscribe_does_not_duplicate():
 	
 	assert_eq(bus.registry["fake_event"].size(), 1)
 	
-func test_trigger_callback():
+func test_post_callback():
 	var event := Event.new("fake_event")
 	
 	bus.subscribe("fake_event", listener, "callback_function")
-	bus.trigger(event)
+	bus.post(event)
 	
 	assert_true(listener.called)
 	assert_eq(listener.event_received, event)
 	
-func test_trigger_skips_invalid_subscriber():
+func test_post_skips_invalid_subscriber():
 	var event := Event.new("fake_event")
 	
 	bus.subscribe("fake_event", listener, "callback_function")
 	listener.free()
 	
-	bus.trigger(event)
+	bus.post(event)
 	
 	assert_eq(bus.registry["fake_event"].size(), 0)
 	
-func test_trigger_skips_missing_function():
+func test_post_skips_missing_function():
 	var event := Event.new("fake_event")
 	
 	bus.subscribe("fake_event", listener, "not_a_function")
-	bus.trigger(event)
+	bus.post(event)
 	
 	assert_true(not listener.called)
 	
