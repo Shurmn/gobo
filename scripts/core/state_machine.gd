@@ -33,10 +33,17 @@ func awaken() -> void:
 	_awake = true
 	set_physics_process(true)
 	set_process_input(true)
+	
+	# if we remember our last state, resume it
+	if not history.is_empty(): 
+		current_state = history.back()
+		return
+		
+	# otherwise, initialize
 	current_state = initial_state
 	current_state.on_enter()
 
-# relieve the weary laborer
+# relieve the weary laborer. not sure this works really
 func sleep() -> void:
 	_awake = false
 	current_state.on_exit()
