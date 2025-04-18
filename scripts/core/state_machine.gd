@@ -8,7 +8,8 @@ var states := {}
 var history := []
 
 # how we began
-@export var initial_state: State  = _resolve_initial_state()
+@onready var initial_state: State  = _resolve_initial_state()
+@export var default_state: State
 
 # how we are now
 @onready var current_state: State
@@ -26,7 +27,9 @@ func _ready() -> void:
 
 # if init isn't, that's null good dawg we'll just get the first child
 func _resolve_initial_state() -> State:
-	return initial_state if initial_state != null else get_child(0)
+	if not default_state:
+		return find_child("*State")
+	return default_state
 
 # something something machine spirits
 func awaken() -> void:
